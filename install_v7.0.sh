@@ -3,7 +3,7 @@
 filename=".kwon_env_v7.0.tar.gz"
 bashfilename=$HOME/".bashrc"
 
-wget -O $filename "http://kwon.kr/vim_env/kwon_env_v7.0.tar.gz"
+wget -O $filename "https://github.com/nimusis/vim/blob/master/kwon_env_v7.0.tar.gz"
 
 gunzip -c $filename | tar -xf - --directory $HOME
 
