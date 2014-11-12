@@ -1,0 +1,22 @@
+# .bashrc
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
+# User specific aliases and functions
+stty erase ^H
+#stty werase ^?
+
+export PS1="\u@\h:\w$ "
+eval `dircolors ~/.kwon_env/colors -b`
+alias ls='ls --color=auto --show-control-chars'
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -f'
+
+###############################
+alias vi='vim -u ~/.kwon_env/vimrc'
+alias vim='vim -u ~/.kwon_env/vimrc'
+###############################
