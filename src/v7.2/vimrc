@@ -1,5 +1,5 @@
 "=====================================================================
-"# ÀÌ°Í Àú°Í ¼³Á¤
+"# ì´ê²ƒ ì €ê²ƒ ì„¤ì •
 "=====================================================================
 set nocompatible
 
@@ -103,14 +103,14 @@ endif " has("autocmd")
 
 
 "=====================================================================
-"# ½Ã½ºÅÛ ±âº» ¼³Á¤
+"# ì‹œìŠ¤í…œ ê¸°ë³¸ ì„¤ì •
 "=====================================================================
-set scrolloff=10 "½ºÅ©·Ñ OFF ±â´É
-set nobackup "¹é¾÷ ÆÄÀÏÀ» ¸¸µéÁö ¾Ê±â
-set nowrapscan "°Ë»öÇÒ ¶§ ¹®¼­ÀÇ ³¡¿¡¼­ ´Ù½Ã Ã³À½À¸·Î µ¹¾Æ°¡Áö ¾Ê°Ô ÇÏ±â
-set ruler       "È­¸é ¿ìÃø ÇÏ´Ü¿¡ ÇöÀç Ä¿¼­ÀÇ À§Ä¡ Ç¥½Ã
+set scrolloff=10 "ìŠ¤í¬ë¡¤ OFF ê¸°ëŠ¥
+set nobackup "ë°±ì—… íŒŒì¼ì„ ë§Œë“¤ì§€ ì•Šê¸°
+set nowrapscan "ê²€ìƒ‰í•  ë•Œ ë¬¸ì„œì˜ ëì—ì„œ ë‹¤ì‹œ ì²˜ìŒìœ¼ë¡œ ëŒì•„ê°€ì§€ ì•Šê²Œ í•˜ê¸°
+set ruler       "í™”ë©´ ìš°ì¸¡ í•˜ë‹¨ì— í˜„ì¬ ì»¤ì„œì˜ ìœ„ì¹˜ í‘œì‹œ
 
-" UTF-8, euc-kr ÇÑ±Û¹®¼­ ±×³É ¿­±â
+" UTF-8, euc-kr í•œê¸€ë¬¸ì„œ ê·¸ëƒ¥ ì—´ê¸°
 if v:lang =~ "^ko"
     set encoding=cp949
     set fileencodings=utf-8,cp949
@@ -124,34 +124,34 @@ endif
 set runtimepath=~/.kwon_env/vim,$VIMRUNTIME
 
 "=====================================================================
-"# GUI ¼³Á¤
+"# GUI ì„¤ì •
 "=====================================================================
-set showmatch "(), {} ¿¡ ´ëÇØ¼­ ÀÏÄ¡ÇÏ´Â °ıÈ£ º¸¿©ÁÜ
-set nu " ÁÙ ¹øÈ£ º¸±â
-"set showmode "mode º¸¿©ÁÖ±â
+set showmatch "(), {} ì— ëŒ€í•´ì„œ ì¼ì¹˜í•˜ëŠ” ê´„í˜¸ ë³´ì—¬ì¤Œ
+set nu " ì¤„ ë²ˆí˜¸ ë³´ê¸°
+"set showmode "mode ë³´ì—¬ì£¼ê¸°
 set noshowmode
 set laststatus=2
 
 
 "=====================================================================
-"# ÆíÁı ¼³Á¤
+"# í¸ì§‘ ì„¤ì •
 "=====================================================================
 set autoindent " Preserve current indent on new lines
 set cindent " set C style indent
-set noet " ÅÇ -> °ø¹é º¯È¯ ±â´É (expandtab )
-set tabstop=4 "Tab ´­·¶À» ¶§ 8Ä­ ´ë½Å 4Ä­ ÀÌµ¿
-set sts=4 " µé¿©¾²±â ÅÇ °£°İ(softtabstop)
-set shiftwidth=4 " µé¿©¾²±â¸¦ ÇÒ¶§ 4Ä­ µé¿©¾²±â
+set noet " íƒ­ -> ê³µë°± ë³€í™˜ ê¸°ëŠ¥ (expandtab )
+set tabstop=4 "Tab ëˆŒë €ì„ ë•Œ 8ì¹¸ ëŒ€ì‹  4ì¹¸ ì´ë™
+set sts=4 " ë“¤ì—¬ì“°ê¸° íƒ­ ê°„ê²©(softtabstop)
+set shiftwidth=4 " ë“¤ì—¬ì“°ê¸°ë¥¼ í• ë•Œ 4ì¹¸ ë“¤ì—¬ì“°ê¸°
 set shiftround " Indent/outdent to nearest tabstop
 
 "=====================================================================
-"# °Ë»ö °ü·Ã ¼³Á¤
+"# ê²€ìƒ‰ ê´€ë ¨ ì„¤ì •
 "=====================================================================
-set ignorecase "¸ÅÄª(Å½»ö)µîÀÇ °æ¿ì ´ë¼Ò¹®ÀÚ¸¦ ±¸ºĞÇÏÁö ¾Ê´Â´Ù.
-set smartcase "ignorecase ¼³Á¤ÈÄ ÀÌ¿É¼Ç°ªÀ» ÁÖ¸é ´ë¹®ÀÚ ÀÔ·Â½Ã ´ë¹®ÀÚ·Î Å½»öÇÑ´Ù.
+set ignorecase "ë§¤ì¹­(íƒìƒ‰)ë“±ì˜ ê²½ìš° ëŒ€ì†Œë¬¸ìë¥¼ êµ¬ë¶„í•˜ì§€ ì•ŠëŠ”ë‹¤.
+set smartcase "ignorecase ì„¤ì •í›„ ì´ì˜µì…˜ê°’ì„ ì£¼ë©´ ëŒ€ë¬¸ì ì…ë ¥ì‹œ ëŒ€ë¬¸ìë¡œ íƒìƒ‰í•œë‹¤.
 set hlsearch " Highlight search terms
 set incsearch " Find as you type search
-set gdefault " turn on 'g' flag
+"set gdefault " turn on 'g' flag
 
 " Visual search mappings
 function! s:VSetSearch()
@@ -163,11 +163,11 @@ endfunction
 vnoremap * :<C-U>call <SID>VSetSearch()<CR>//<CR>
 vnoremap # :<C-U>call <SID>VSetSearch()<CR>??<CR>
 
-" ÇÏÀÏ¶óÀÌÆ® on,off ,½ºÆäÀÌ½º
+" í•˜ì¼ë¼ì´íŠ¸ on,off ,ìŠ¤í˜ì´ìŠ¤
 nnoremap <Leader><Space> :set hlsearch!<CR>
 
 "=====================================================================
-"# »ö±ò, ÆùÆ®, Å×¸¶ µîµî
+"# ìƒ‰ê¹”, í°íŠ¸, í…Œë§ˆ ë“±ë“±
 "=====================================================================
 syntax on " Enable syntax
 set background=dark " Set background
@@ -177,20 +177,20 @@ endif
 
 colorscheme kwon
 
-set cursorline " ÇöÀç ÁÙ »ö»ó
+set cursorline " í˜„ì¬ ì¤„ ìƒ‰ìƒ
 "
 "" if has('multi_byte_ime') 
-highlight Cursor guibg=green guifg=NONE " ¿µ¹® 
-highlight CursorIM guibg=Yellow guifg=NONE " ÇÑ±Û
+highlight Cursor guibg=green guifg=NONE " ì˜ë¬¸ 
+highlight CursorIM guibg=Yellow guifg=NONE " í•œê¸€
 " endif
 
 "=====================================================================
-"# Function Key Map ¼³Á¤
+"# Function Key Map ì„¤ì •
 "=====================================================================
-" ÅÇ ÀÌµ¿
+" íƒ­ ì´ë™
 map <tab> gt<CR>
 
-"Tlist ½ÇÇà
+"Tlist ì‹¤í–‰
 map <silent> <F9> :TagbarToggle<CR>
 
 map <PageUp> <C-U><C-U>
@@ -200,12 +200,12 @@ nnoremap <F7> :NERDTreeFind<CR>
 nnoremap <F8> :NERDTreeToggle<CR>
 
 "=====================================================================
-"# Plugin Powerline ¼³Á¤
+"# Plugin Powerline ì„¤ì •
 "=====================================================================
 "let g:Powerline_symbols = 'fancy'
 
 "=====================================================================
-"# Plugin ShowMarks ¼³Á¤
+"# Plugin ShowMarks ì„¤ì •
 "=====================================================================
 "let g:showmarks_ignore_type= "hprmq"
 let g:showmarks_include= "abcdefhijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
@@ -217,43 +217,43 @@ highlight ShowMarksHLo ctermfg=white ctermbg=blue
 highlight ShowMarksHLm ctermfg=white ctermbg=blue
 
 "=====================================================================
-"# Plugin TAGBAR ¼³Á¤
+"# Plugin TAGBAR ì„¤ì •
 "=====================================================================
-let g:tagbar_left = 1 " 0ÀÌ¸é ¿À¸¥ÂÊ, 1ÀÌ¸é ¿ŞÂÊ¿¡ Ãâ·Â
-let g:tagbar_width = 40 "±âº»ÆøÀº 40ÀÔ´Ï´Ù. ¸ğ´ÏÅÍ°¡ ÀÛÀ¸¸é ÁÙ¿©¾ß °ÚÁÒ ¤Ğ
-let g:tagbar_autoclose = 0 "¼±ÅÃÇÏ¸é ÀÚµ¿À¸·Î ´İÈ÷°Ô ÇÏ·Á¸é 1À» ÇÒ´çÇØ ÁÖ¼¼¿ä
-let g:tagbar_autofocus = 1 "Ä¿¼­°¡ ÀÌµ¿ÇÏ¸é ÀÚµ¿À¸·Î ¼±¾ğµÈ À§Ä¡·Î °©´Ï´Ù (?)
+let g:tagbar_left = 1 " 0ì´ë©´ ì˜¤ë¥¸ìª½, 1ì´ë©´ ì™¼ìª½ì— ì¶œë ¥
+let g:tagbar_width = 40 "ê¸°ë³¸í­ì€ 40ì…ë‹ˆë‹¤. ëª¨ë‹ˆí„°ê°€ ì‘ìœ¼ë©´ ì¤„ì—¬ì•¼ ê² ì£  ã… 
+let g:tagbar_autoclose = 0 "ì„ íƒí•˜ë©´ ìë™ìœ¼ë¡œ ë‹«íˆê²Œ í•˜ë ¤ë©´ 1ì„ í• ë‹¹í•´ ì£¼ì„¸ìš”
+let g:tagbar_autofocus = 1 "ì»¤ì„œê°€ ì´ë™í•˜ë©´ ìë™ìœ¼ë¡œ ì„ ì–¸ëœ ìœ„ì¹˜ë¡œ ê°‘ë‹ˆë‹¤ (?)
 let g:tagbar_foldlevel=2
 let g:tagbar_autoshowtag=1
 let g:tagbar_expand=1
 
 "=====================================================================
-"# Plugin NERDTREE ¼³Á¤
+"# Plugin NERDTREE ì„¤ì •
 "=====================================================================
-let g:NERDChristmasTree = 1 "colorful È¿°ú
+let g:NERDChristmasTree = 1 "colorful íš¨ê³¼
 let g:NERDTreeAutoCenter = 1 
 let g:NERDTreeChDirMode = 1
-let g:NERDTreeHighlightCursorline = 1 "ÇöÀç Ä¿¼­ À§Ä¡¸¦ ÇÏÀÏ¶óÀÌÆÃÇÕ´Ï´Ù. ±âº»°ªÀº 1
-let g:NERDTreeSortOrder=['Makefile', 'makefile', '\.c$', '\.h$', '*'] " *.c, *.h, ±âÅ¸ÆÄÀÏ ¼øÀ¸·Î Á¤·ÄÇÕ´Ï´Ù.
+let g:NERDTreeHighlightCursorline = 1 "í˜„ì¬ ì»¤ì„œ ìœ„ì¹˜ë¥¼ í•˜ì¼ë¼ì´íŒ…í•©ë‹ˆë‹¤. ê¸°ë³¸ê°’ì€ 1
+let g:NERDTreeSortOrder=['Makefile', 'makefile', '\.c$', '\.h$', '*'] " *.c, *.h, ê¸°íƒ€íŒŒì¼ ìˆœìœ¼ë¡œ ì •ë ¬í•©ë‹ˆë‹¤.
 let g:NERDTreeShowBookmarks=1
-let g:NERDTreeBookmarksFile = '~/.NERDTreeBookmarks' "ºÏ¸¶Å© ÆÄÀÏÀ» ÁöÁ¤ÇÕ´Ï´Ù. ÀÌ°ªÀº µğÆúÆ® °ªÀÌ¿¡¿ä.
-let g:NERDTreeIgnore = ['\.vim$', '\~$', '\.o$'] " *.vimÆÄÀÏ°ú ³¡ÀÌ'~'·Î ³¡³ª´Â ÆÄÀÏµéÀº º¸¿©ÁÖÁö ¾Ê½À´Ï´Ù.
-let g:lNERDTreeWinSize = 20 "NERDTreeÀÇ ÆøÀ» ¼³Á¤ÇÕ´Ï´Ù.
-let g:NERDTreeMinimalUI = 1 "NERDTree¿¡¼­ (À§¿¡¶ß´Â) help/bookmark ¸Ş¼¼Áö¸¦ º¸¿©ÁÖÁö ¾Ê½À´Ï´Ù.
-let g:NERDTreeShowHidden = 0 "¼û±èÆÄÀÏÀ» º¸¿©ÁØ´Ù°í ÇÕ´Ï´Ù.
+let g:NERDTreeBookmarksFile = '~/.NERDTreeBookmarks' "ë¶ë§ˆí¬ íŒŒì¼ì„ ì§€ì •í•©ë‹ˆë‹¤. ì´ê°’ì€ ë””í´íŠ¸ ê°’ì´ì—ìš”.
+let g:NERDTreeIgnore = ['\.vim$', '\~$', '\.o$'] " *.vimíŒŒì¼ê³¼ ëì´'~'ë¡œ ëë‚˜ëŠ” íŒŒì¼ë“¤ì€ ë³´ì—¬ì£¼ì§€ ì•ŠìŠµë‹ˆë‹¤.
+let g:lNERDTreeWinSize = 20 "NERDTreeì˜ í­ì„ ì„¤ì •í•©ë‹ˆë‹¤.
+let g:NERDTreeMinimalUI = 1 "NERDTreeì—ì„œ (ìœ„ì—ëœ¨ëŠ”) help/bookmark ë©”ì„¸ì§€ë¥¼ ë³´ì—¬ì£¼ì§€ ì•ŠìŠµë‹ˆë‹¤.
+let g:NERDTreeShowHidden = 0 "ìˆ¨ê¹€íŒŒì¼ì„ ë³´ì—¬ì¤€ë‹¤ê³  í•©ë‹ˆë‹¤.
 let g:NERDTreeDirArrows=0
-let g:NERDTreeShowLineNumbers=1 "¶óÀÎÀ» º¸¿©Áİ´Ï´Ù
-let g:NERDTreeQuitOnOpen=1 "ÆÄÀÏ ¿ÀÇÂÇÏ°í ³ª¸é ´İÈ÷µµ·Ï ¼³Á¤.
+let g:NERDTreeShowLineNumbers=1 "ë¼ì¸ì„ ë³´ì—¬ì¤ë‹ˆë‹¤
+let g:NERDTreeQuitOnOpen=1 "íŒŒì¼ ì˜¤í”ˆí•˜ê³  ë‚˜ë©´ ë‹«íˆë„ë¡ ì„¤ì •.
 let g:NERDTreeCaseSensitiveSort=1
 
-" let g:NERDTreeShowFiles = 0 "0ÀÌ¸é ÆÄÀÏÀ» º¸¿©ÁÖÁö ¾Ê°í, µğ·ºÅä¸®¸¸ º¸¿©Áİ´Ï´Ù.
-" let g:NERDTreeWinPos = right "ÀÌ·¸°Ô ¼³Á¤ÇÏ¸é ¿À¸¥ÂÊ¿¡ NERDTree°¡ ³ªÅ¸³³´Ï´Ù.
-" ÀÌ¿Ü¿¡ ´õ ÀÚ¼¼ÇÑ°Ç :help NERDTree
+" let g:NERDTreeShowFiles = 0 "0ì´ë©´ íŒŒì¼ì„ ë³´ì—¬ì£¼ì§€ ì•Šê³ , ë””ë ‰í† ë¦¬ë§Œ ë³´ì—¬ì¤ë‹ˆë‹¤.
+" let g:NERDTreeWinPos = right "ì´ë ‡ê²Œ ì„¤ì •í•˜ë©´ ì˜¤ë¥¸ìª½ì— NERDTreeê°€ ë‚˜íƒ€ë‚©ë‹ˆë‹¤.
+" ì´ì™¸ì— ë” ìì„¸í•œê±´ :help NERDTree
 "nnoremap <Leader>d :NERDTreeToggle<CR>
 "nnoremap <Leader>f :NERDTreeFind<CR>
 
 "=====================================================================
-"# Plugin neocomplcache ¼³Á¤
+"# Plugin neocomplcache ì„¤ì •
 "=====================================================================
 "Note: This option must set it in .vimrc(_vimrc).  NOT IN .gvimrc(_gvimrc)!
 " Disable AutoComplPop.
